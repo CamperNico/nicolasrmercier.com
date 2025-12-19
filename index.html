@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nicolas R. Mercier | Mechanical Engineer</title>
+  <meta name="description" content="Portfolio of Nicolas R. Mercier — Mechanical Engineer focused on product development, design, prototyping, and manufacturing." />
+  <style>
+    :root{
+      --bg:#0b0c10;
+      --card:#11131a;
+      --text:#e8eaf0;
+      --muted:#a9afbf;
+      --line:#2a2f3a;
+      --accent:#7dd3fc;
+      --accent2:#a78bfa;
+      --max:1040px;
+      --r:16px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(125,211,252,.18), transparent 55%),
+                  radial-gradient(900px 500px at 90% 0%, rgba(167,139,250,.16), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 60px;}
+    header{
+      display:flex; gap:14px; align-items:center; justify-content:space-between;
+      padding:14px 16px; border:1px solid var(--line); border-radius:var(--r);
+      background:rgba(17,19,26,.72); backdrop-filter: blur(10px);
+      position:sticky; top:12px;
+    }
+    .brand{display:flex; flex-direction:column; gap:2px}
+    .brand b{letter-spacing:.2px}
+    .brand span{color:var(--muted); font-size:.92rem}
+    nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+    .pill{
+      text-decoration:none;
+      border:1px solid var(--line);
+      padding:8px 10px;
+      border-radius:999px;
+      color:var(--muted);
+      font-size:.92rem;
+    }
+    .pill:hover{border-color:rgba(125,211,252,.55); color:var(--text)}
+    .hero{
+      margin-top:22px;
+      display:grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap:16px;
+      align-items:stretch;
+    }
+    .card{
+      border:1px solid var(--line);
+      background:rgba(17,19,26,.72);
+      border-radius:var(--r);
+      padding:18px;
+      backdrop-filter: blur(10px);
+    }
+    h1{
+      margin:0 0 10px 0;
+      font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+      line-height:1.15;
+    }
+    .tagline{color:var(--muted); margin:0 0 14px 0}
+    .cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 12px; border-radius:12px;
+      border:1px solid var(--line);
+      text-decoration:none;
+      font-weight:600;
+      background:linear-gradient(180deg, rgba(125,211,252,.14), rgba(167,139,250,.10));
+    }
+    .btn.secondary{background:transparent; color:var(--muted); font-weight:600}
+    .btn:hover{border-color:rgba(125,211,252,.55)}
+    .grid{
+      margin-top:16px;
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap:16px;
+    }
+    .span-7{grid-column: span 7}
+    .span-5{grid-column: span 5}
+    .span-4{grid-column: span 4}
+    .span-6{grid-column: span 6}
+    .kicker{color:var(--muted); font-size:.9rem; margin:0 0 8px 0}
+    h2{margin:0 0 10px 0; font-size:1.05rem}
+    ul{margin:10px 0 0 18px; color:var(--muted)}
+    li{margin:6px 0}
+    .proj{
+      display:flex; flex-direction:column; gap:8px;
+      border:1px solid var(--line);
+      background:rgba(11,12,16,.35);
+      border-radius:14px;
+      padding:14px;
+    }
+    .proj b{font-size:1rem}
+    .proj span{color:var(--muted); font-size:.92rem}
+    .chips{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px}
+    .chip{
+      border:1px solid var(--line);
+      color:var(--muted);
+      font-size:.82rem;
+      padding:6px 8px;
+      border-radius:999px;
+    }
+    footer{
+      margin-top:22px;
+      color:var(--muted);
+      text-align:center;
+      font-size:.9rem;
+    }
+    @media (max-width: 860px){
+      .hero{grid-template-columns:1fr}
+      .span-7,.span-5,.span-6,.span-4{grid-column: span 12}
+      header{position:static}
+      nav{justify-content:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <b>Nicolas R. Mercier</b>
+        <span>Mechanical Engineer · Product Development</span>
+      </div>
+      <nav>
+        <a class="pill" href="#projects">Projects</a>
+        <a class="pill" href="#skills">Skills</a>
+        <a class="pill" href="#patents">Patents</a>
+        <a class="pill" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Technical Showcase — Design, Prototyping, and Product Development</h1>
+        <p class="tagline">
+          I build robust mechanical products by bridging CAD design, hands-on prototyping, manufacturing,
+          and test-driven iteration. This site highlights selected work, capabilities, and outcomes.
+        </p>
+
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#contact">Get in Touch</a>
+        </div>
+
+        <p class="kicker" style="margin-top:14px;">
+          Tip: We’ll replace the placeholder content with your real projects next.
+        </p>
+      </div>
+
+      <div class="card">
+        <p class="kicker">At a glance</p>
+        <h2>Focus Areas</h2>
+        <ul>
+          <li>CAD design & design-for-manufacture</li>
+          <li>Prototype build + test plans</li>
+          <li>Supplier/production collaboration</li>
+          <li>Documentation, drawings, and reporting</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">SolidWorks</span>
+          <span class="chip">GD&T</span>
+          <span class="chip">DFM</span>
+          <span class="chip">Prototyping</span>
+          <span class="chip">Testing</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="grid">
+      <div class="card span-7">
+        <p class="kicker">Featured</p>
+        <h2>Projects</h2>
+
+        <div class="proj">
+          <b>Project Placeholder #1</b>
+          <span>One sentence: what it is + why it matters + measurable outcome.</span>
+          <div class="chips">
+            <span class="chip">CAD</span><span class="chip">Prototype</span><span class="chip">Test</span>
+          </div>
+        </div>
+
+        <div class="proj" style="margin-top:12px;">
+          <b>Project Placeholder #2</b>
+          <span>One sentence: problem → approach → result (keep it tight).</span>
+          <div class="chips">
+            <span class="chip">DFM</span><span class="chip">Manufacturing</span><span class="chip">Validation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card span-5" id="skills">
+        <p class="kicker">Capabilities</p>
+        <h2>Skills</h2>
+        <ul>
+          <li>Mechanical design: mechanisms, assemblies, tolerancing</li>
+          <li>Manufacturing: machining, 3D printing, vendor coordination</li>
+          <li>Testing: fixtures, protocols, data capture, iteration</li>
+          <li>Communication: drawings, reports, cross-functional work</li>
+        </ul>
+      </div>
+
+      <div class="card span-6" id="patents">
+        <p class="kicker">IP</p>
+        <h2>Patents</h2>
+        <p class="kicker">We’ll add your patent titles + links here next.</p>
+        <div class="proj">
+          <b>Patent Placeholder</b>
+          <span>Short description of the innovation and your role.</span>
+        </div>
+      </div>
+
+      <div class="card span-6" id="contact">
+        <p class="kicker">Contact</p>
+        <h2>Let’s connect</h2>
+        <ul>
+          <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+          <li>LinkedIn: <a href="#" target="_blank" rel="noreferrer">add your LinkedIn link</a></li>
+          <li>Resume: <a href="#" target="_blank" rel="noreferrer">add PDF link</a></li>
+        </ul>
+        <p class="kicker" style="margin-top:10px;">
+          Next step: we’ll swap these placeholders for your real links and upload your resume PDF.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Nicolas R. Mercier · Built with HTML/CSS · Hosted on GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
